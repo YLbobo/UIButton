@@ -1,0 +1,8 @@
+platform:ios,'10.0'
+abstract_target 'Default' do
+inhibit_all_warnings!
+pod 'ReactiveObjC', '~> 3.1.0'
+pod 'SVProgressHUD'
+target 'UIButton组件'
+
+end

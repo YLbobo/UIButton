@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  UIButton组件
+//
+//  Created by 闫博 on 2023/7/27.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
+#define kWindow [UIApplication sharedApplication].keyWindow
+#define kNaviBarHeight (kPhoneX?64.0+24.0:64.0)
+// 是否是X系列
+#define kPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
+//常规颜色
+#define ListNormalColor [UIColor colorWithHexString:@"F2F3F6"]
+//主标题颜色
+#define MainTitleColor [UIColor colorWithHexString:@"26272A"]
+//副标题颜色
+#define SubTitleColor [UIColor colorWithHexString:@"58595C"]
+//线条颜色
+#define LineColor [UIColor colorWithHexString:@"ECEDF0"]
+//蓝色
+#define BlueNormalColor [UIColor colorWithHexString:@"1A6AFF"]
+//次要信息
+#define InformationColor [UIColor colorWithHexString:@"8A8B8E"]
+//其他
+#define OtherColor [UIColor colorWithHexString:@"BCBDC0"]
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#import "UIColor+Extension.h"
+#import "UIView+Additions.h"
+#import <ReactiveObjC.h>
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

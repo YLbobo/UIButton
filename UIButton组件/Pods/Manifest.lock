@@ -1,0 +1,20 @@
+PODS:
+  - ReactiveObjC (3.1.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - ReactiveObjC (~> 3.1.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - ReactiveObjC
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 8e5e510fa5823adc23aa1e735439503cec5b8df1
+
+COCOAPODS: 1.12.0
